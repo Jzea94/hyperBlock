@@ -1,32 +1,3 @@
-//Comandos más usados
 1. git init: inicializa un nuevo repositorio local
-2. git status:  Muestra el estado actual del repositorio
-3. git add <nombre>: agrega archivos al staging
-4. git add . : agrega todos los archivos al staging
-5. git commit -m "mensaje" : crea un nuevo commit con los cambios en el área de preparación
-6. git commit : en caso de no lograr un mensaje la 
-7. git rm : elimina los archivos pero no su historial
-8. git rm --cached <nombre> : elimina los archivos en staging, pero los mantiene en disco duro
-9. git rm --force <nombre> : elimina los archivos de git y del disco duro
-10. alias <alias>="comando" : asigna un alias a cualquier comando
-
-//Configuración de GIT
-1. git config: 
-2. git config --list:
-3. git config --global user.name "Juan Jimenez"
-4. git config --global user.email "jjzea.94@gmail.com"
-
-//Revisión de historial
-1. git log <nombre> : muestra la historia del archivo.
-2. git log --all --graph : muestra de manera gráfica (tree) el historial del repositorio
-3. git log --all --decorate --oneline : muestra de manera gráfica y comprimida el historial del repositorio
-4. git log --stat : muestra los cambios específicos del archivo en bytes
-5. git show-branch:  muestra las ramas existentes y un poco de su historia.
-6. git show-branch --all: muestra las ramas existentes y la historia reciente más detallada del proyecto
-7. gitk : nos muestra la historia de nuestro proyecto en un software aparte.
-
-//Administración de versiones
-1. git checkout CommitID <nombre> : nos regresa a una versión anterior de manera temporal, se pierden los cambios en staging
-2. git checkout master <nombre> : nos regresa a la ultima versión de la rama master
-3. git reset CommitID --hard : nos regresa a una versión anterior de manera definitiva, se pierden los cambios en staging
-4. git reset CommitID --soft : nos regresa a una version anterior de manera definitiva, los cambios en staging se mantienen
+2. git status:
+3. git add <nombre>: 
