@@ -3,10 +3,13 @@
 2. git status:  Muestra el estado actual del repositorio
 3. git add <nombre>: agrega archivos al staging
 4. git add . : agrega todos los archivos al staging
-5. git rm : elimina los archivos pero no su historial
-6. git rm --cached <nombre> : elimina los archivos en staging, pero los mantiene en disco duro
-7. git rm --force <nombre> : elimina los archivos de git y del disco duro
-8. alias <alias>="comando" : asigna un alias a cualquier comando
+5. git commit -m "mensaje" : crea un nuevo commit con los cambios en el área de preparación
+6. git commit : en caso de no lograr un mensaje la 
+. git rm : elimina los archivos pero no su historial
+. git rm --cached <nombre> : elimina los archivos en staging, pero los mantiene en disco duro
+. git rm --force <nombre> : elimina los archivos de git y del disco duro
+. alias <alias>="comando" : asigna un alias a cualquier comando
+
 
 //Configuración de GIT
 1. git config: 
@@ -18,4 +21,6 @@
 1. git log <nombre> : muestra la historia del archivo.
 2. git log --all --graph : muestra de manera gráfica (tree) el historial del repositorio
 3. git log --all --decorate --oneline : muestra de manera gráfica y comprimida el historial del repositorio
-4.
+4. git show-branch:  muestra las ramas existentes y un poco de su historia.
+5. git show-branch --all: muestra las ramas existentes y la historia reciente más detallada del proyecto
+6. gitk : nos muestra la historia de nuestro proyecto en un software aparte.
