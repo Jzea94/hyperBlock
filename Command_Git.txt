@@ -1,3 +1,18 @@
+//Comandos más usados
 1. git init: inicializa un nuevo repositorio local
-2. git status:
-3. git add <nombre>: 
+2. git status:  Muestra el estado actual del repositorio
+3. git add <nombre>: agrega archivos al staging
+4. git add . : agrega todos los archivos al staging
+5. git rm : elimina los archivos pero no su historial
+6. git rm --cached <nombre> : elimina los archivos en staging, pero los mantiene en disco duro
+7. git rm --force <nombre> : elimina los archivos de git y del disco duro
+
+//Configuración de GIT
+4. git config: 
+5. git config --list:
+6. git config --global user.name "Juan Jimenez"
+7. git config --global user.email "jjzea.94@gmail.com"
+
+//
+x. git log <nombre> : muestra la historia del archivo.
+x. 
