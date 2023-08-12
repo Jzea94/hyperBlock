@@ -6,13 +6,16 @@
 5. git rm : elimina los archivos pero no su historial
 6. git rm --cached <nombre> : elimina los archivos en staging, pero los mantiene en disco duro
 7. git rm --force <nombre> : elimina los archivos de git y del disco duro
+8. alias <alias>="comando" : asigna un alias a cualquier comando
 
 //Configuración de GIT
-4. git config: 
-5. git config --list:
-6. git config --global user.name "Juan Jimenez"
-7. git config --global user.email "jjzea.94@gmail.com"
+1. git config: 
+2. git config --list:
+3. git config --global user.name "Juan Jimenez"
+4. git config --global user.email "jjzea.94@gmail.com"
 
-//
-x. git log <nombre> : muestra la historia del archivo.
-x. 
+//Revisión de historial
+1. git log <nombre> : muestra la historia del archivo.
+2. git log --all --graph : muestra de manera gráfica (tree) el historial del repositorio
+3. git log --all --decorate --oneline : muestra de manera gráfica y comprimida el historial del repositorio
+4.
