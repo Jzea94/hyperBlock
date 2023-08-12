@@ -26,6 +26,7 @@
 7. gitk : nos muestra la historia de nuestro proyecto en un software aparte.
 
 //Administración de versiones
-1. git checkout CommitID <nombre>
-2. git checkout master <nombre>
-3.
+1. git checkout CommitID <nombre> : nos regresa a una versión anterior de manera temporal, se pierden los cambios en staging
+2. git checkout master <nombre> : nos regresa a la ultima versión de la rama master
+3. git reset CommitID --hard : nos regresa a una versión anterior de manera definitiva, se pierden los cambios en staging
+4. git reset CommitID --soft : nos regresa a una version anterior de manera definitiva, los cambios en staging se mantienen
