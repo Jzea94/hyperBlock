@@ -38,4 +38,4 @@
 //Other
 1. git merge <nameBranch>: realiza la fusión entre dos ramas
 2. alias <alias>="comando" : asigna un alias a cualquier comando
-3.
+3. agregaremos esto para probar nuevamente el comando merge
