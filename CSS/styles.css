@@ -1,18 +1,39 @@
-body{
+body {
     color: black;
     text-align: center;
-    font-family: "Time New Roman";
-    font-size: 16px;
+    font-family: "Arial Narrow";
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background: rgba(144, 70, 214, 0.548);
+    box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
 }
 
-#container{
+#Header #tagline{
+    font-size: 1em;
+    font-weight: normal;    
+    padding: 0.6em;
+}
+
+#container {
     width: 70%;
-    padding: 1em;
+    padding: 0;
     text-align: left;
     border: 1px solid rgb(166, 166, 238);
     margin: 0 auto;
 }
 
+#container #post {
+    padding: 1em;    
+}
+
 #container h1{
-    font-size: 20px;
+    font-size: 30px;    
 }
