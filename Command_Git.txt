@@ -75,4 +75,3 @@
 4. git push origin :refs/tags/<nameTag> : elimina un tag en github
 5. git show-ref --tags : muestra a que commits apuntan los tags
 6. git push origin --tags : carga los tags al repo en github
-7. 
