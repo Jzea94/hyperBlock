@@ -39,3 +39,18 @@
 1. git merge <nameBranch>: realiza la fusión entre dos ramas
 2. alias <alias>="comando" : asigna un alias a cualquier comando
 3. 
+
+// Conección Git & GitHub
+1. Nos movemos al Home
+    git config --global user.name "nombre"
+    git config --global user.email "email del repo"
+    ssh-keygen -t rsa -b 4096 -C "email del repo"
+    >>Se nos va a pedir una passphrase y asignamos una. con esto ya quedara creada la llave ssh
+2. Agregamos la llave al entorno de trabajo
+    eval $(ssh-agent -s)
+    >> El anterior comando esta evaluando que el servidor de llaves este corriendo
+3. Agregamos la llave a GitHub
+    ssh-add ~/.ssh/
+    >> Se nos va a pedir la passphrase configuarda anteriormente
+
+
