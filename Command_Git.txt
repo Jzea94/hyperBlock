@@ -64,7 +64,7 @@
     6. git remote add origin git@github.com:Jzea94/hyperBlock.git
     7. git remote -v
 >> Nos ayuda a mostrar los origin para hacer fetch y push
-    8. git push origin main --allow-unrelaed-histories
+    8. git push origin main --allow-unrelated-histories
 >> Ayuda a fusionar de manera forzada el repositorio remoto con el local
     9. git push origin main
 >> Enviamos los cambios del repositorio local al remoto
@@ -73,7 +73,7 @@
 1. git tag : muestra la lista de tags creados
 2. git tag -a <nameTag> -m "mensaje" commitID : crea una etiqueta
 3. git tag -d <nameTag> : elimina un tag de manera local
-4. git push origin :refs/tags/<nameTag> : elimina un tag en github
+4. git push origin :refs/tags/<nameTag> : elimina un tag en GitHub
 5. git show-ref --tags : muestra a que commits apuntan los tags
-6. git push origin --tags : carga los tags al repo en github
+6. git push origin --tags : carga los tags al repo en GitHub
 7. 
