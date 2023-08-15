@@ -9,18 +9,20 @@
 8. git rm : elimina los archivos pero no su historial
 9. git rm --cached <nombre> : elimina los archivos en staging, pero los mantiene en disco duro
 10. git rm --force <nombre> : elimina los archivos de git y del disco duro
-11. alias <alias>="comando" : asigna un alias a cualquier comando
 
 //Configuración de GIT
 1. git config: 
 2. git config --list:
 3. git config --global user.name "Juan Jimenez"
 4. git config --global user.email "jjzea.94@gmail.com"
+5. git config --global alias.<nameAlias> <commandGit> : de esta manera creamos un alias en memoria
+6. git config --global --edit : de esta manera abrimos una interfaz para modificar un alias
+7. nano ~/.gitconfig : este comando nos permite crear y modificar alias desde la interfaz nano
 
 //Revisión de historial
 1. git log <nombre> : muestra la historia del archivo.
 2. git log --all --graph : muestra de manera gráfica (tree) el historial del repositorio
-3. git log --all --decorate --oneline : muestra de manera gráfica y comprimida el historial del repositorio
+3. git log --all --graph --decorate --oneline : muestra de manera gráfica y comprimida el historial del repositorio
 4. git log --stat : muestra los cambios específicos del archivo en bytes
 5. git show-branch:  muestra las ramas existentes y un poco de su historia.
 6. git show-branch --all: muestra las ramas existentes y la historia reciente más detallada del proyecto
@@ -40,27 +42,28 @@
 2. alias <alias>="comando" : asigna un alias a cualquier comando
 3. git push origin master
 
-// Cambios en GitHub: master a main
+// GitHub updates: master to main
 1. git branch -m main
 2. git push origin main
+>> De esta manera cambiamos el nombre de master a main
 
 // Conexión Git & GitHub
-1. Nos movemos al Home
-    git config --global user.name "nombre"
-    git config --global user.email "email del repo"
-    ssh-keygen -t rsa -b 4096 -C "email del repo"
-    >>Se nos va a pedir una passphrase y asignamos una. con esto ya quedara creada la llave ssh
-2. Agregamos la llave al entorno de trabajo
-    eval $(ssh-agent -s)
-    >> El anterior comando esta evaluando que el servidor de llaves este corriendo
-3. Agregamos la llave a GitHub
-    ssh-add ~/.ssh/
-    >> Se nos va a pedir la passphrase configurada anteriormente
-4. Regresamos a la ubicación del repositorio para agregar un origen remoto de nuestros archivos
-    git remote add origin git@github.com:Jzea94/hyperBlock.git
-    git remote -v
-    >> Nos ayuda a mostrar los origin para hacer fetch y push
-    git push origin main --allow-unrelaed-histories
-    >> Ayuda a fusionar de manera forzada el repositorio remoto con el local
-    git push origin main
-    >> Enviamos los cambios del repo local al remoto
+>> Nos movemos al Home
+    1. git config --global user.name "nombre"
+    2. git config --global user.email "email del repo"
+    3. ssh-keygen -t rsa -b 4096 -C "email del repo"
+>> Se nos va a pedir una asignar una passphrase. Con esto ya quedara creada la llave ssh
+>> Agregamos la llave al entorno de trabajo
+    4. eval $(ssh-agent -s)
+>> El anterior comando esta evaluando que el servidor de llaves este corriendo
+>> Agregamos la llave a GitHub
+    5. ssh-add ~/.ssh/
+>> Se nos va a pedir la passphrase configurada anteriormente
+>> Regresamos a la ubicación del repositorio para agregar un origen remoto de nuestros archivos
+    6. git remote add origin git@github.com:Jzea94/hyperBlock.git
+    7. git remote -v
+>> Nos ayuda a mostrar los origin para hacer fetch y push
+    8. git push origin main --allow-unrelaed-histories
+>> Ayuda a fusionar de manera forzada el repositorio remoto con el local
+    9. git push origin main
+>> Enviamos los cambios del repositorio local al remoto
