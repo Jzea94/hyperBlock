@@ -59,7 +59,7 @@
 >> El anterior comando esta evaluando que el servidor de llaves este corriendo
 >> Agregamos la llave a GitHub
     5. ssh-add ~/.ssh/
->> Se nos va a pedir la passphrase configurada anteriormente
+>> Se nos va a pedir la passphrase configurada anteriormente. una vez ingresada se nos dejara de pedir la passphrase al momento de realizar git pull o git push
 >> Regresamos a la ubicación del repositorio para agregar un origen remoto de nuestros archivos
     6. git remote add origin git@github.com:Jzea94/hyperBlock.git
     7. git remote -v
