@@ -31,9 +31,10 @@
 //Administración de ramas y versiones
 1. git branch : muestra un litado con todas las ramas del repositorio
 2. git branch <nameBranch> : con este comando se crea una nueva rama
+3. git branch -D <nameBranch> : se fuerza la eliminación de una rama
 3. git checkout <branch> : nos movemos de una rama a otra
-4. git checkout CommitID <nombre> : nos regresa a una versión anterior de manera temporal, se pierden los cambios en staging
-5. git checkout master <nombre> : nos regresa a la ultima versión de la rama master
+4. git checkout CommitID <fileName> : nos regresa a una versión anterior de manera temporal, se pierden los cambios en staging
+5. git checkout master <fileName> : nos regresa a la ultima versión de la rama master
 6. git reset CommitID --hard : nos regresa a una versión anterior de manera definitiva, se pierden los cambios en staging
 7. git reset CommitID --soft : nos regresa a una version anterior de manera definitiva, los cambios en staging se mantienen
 
