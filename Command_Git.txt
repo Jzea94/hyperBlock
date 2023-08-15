@@ -38,9 +38,9 @@
 //Other
 1. git merge <nameBranch>: realiza la fusión entre dos ramas
 2. alias <alias>="comando" : asigna un alias a cualquier comando
-3. 
+3. git push origin master
 
-// Conección Git & GitHub
+// Conexión Git & GitHub
 1. Nos movemos al Home
     git config --global user.name "nombre"
     git config --global user.email "email del repo"
@@ -51,6 +51,12 @@
     >> El anterior comando esta evaluando que el servidor de llaves este corriendo
 3. Agregamos la llave a GitHub
     ssh-add ~/.ssh/
-    >> Se nos va a pedir la passphrase configuarda anteriormente
-
-
+    >> Se nos va a pedir la passphrase configurada anteriormente
+4. Regresamos a la ubicación del repositorio para agregar un origen remoto de nuestros archivos
+    git remote add origin git@github.com:Jzea94/hyperBlock.git
+    git remote -v : nos ayuda a mostrar los origin para hacer fetch y push
+    git push origin main --allow-unrelaed-histories : ayuda a fusionar de manera forzada el repositorio remoto con el local
+    
+// Cambios en GitHub: master a main
+1. git branch -m main
+2. git push origin main
