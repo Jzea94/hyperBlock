@@ -31,10 +31,9 @@
 //Administración de ramas y versiones
 1. git branch : muestra un litado con todas las ramas del repositorio
 2. git branch <nameBranch> : con este comando se crea una nueva rama
-3. git branch -D <nameBranch> : se fuerza la eliminación de una rama
 3. git checkout <branch> : nos movemos de una rama a otra
-4. git checkout CommitID <fileName> : nos regresa a una versión anterior de manera temporal, se pierden los cambios en staging
-5. git checkout master <fileName> : nos regresa a la ultima versión de la rama master
+4. git checkout CommitID <nombre> : nos regresa a una versión anterior de manera temporal, se pierden los cambios en staging
+5. git checkout master <nombre> : nos regresa a la ultima versión de la rama master
 6. git reset CommitID --hard : nos regresa a una versión anterior de manera definitiva, se pierden los cambios en staging
 7. git reset CommitID --soft : nos regresa a una version anterior de manera definitiva, los cambios en staging se mantienen
 
@@ -59,12 +58,12 @@
 >> El anterior comando esta evaluando que el servidor de llaves este corriendo
 >> Agregamos la llave a GitHub
     5. ssh-add ~/.ssh/
->> Se nos va a pedir la passphrase configurada anteriormente. una vez ingresada se nos dejara de pedir la passphrase al momento de realizar git pull o git push
+>> Se nos va a pedir la passphrase configurada anteriormente
 >> Regresamos a la ubicación del repositorio para agregar un origen remoto de nuestros archivos
     6. git remote add origin git@github.com:Jzea94/hyperBlock.git
     7. git remote -v
 >> Nos ayuda a mostrar los origin para hacer fetch y push
-    8. git push origin main --allow-unrelated-histories
+    8. git push origin main --allow-unrelaed-histories
 >> Ayuda a fusionar de manera forzada el repositorio remoto con el local
     9. git push origin main
 >> Enviamos los cambios del repositorio local al remoto
@@ -73,7 +72,6 @@
 1. git tag : muestra la lista de tags creados
 2. git tag -a <nameTag> -m "mensaje" commitID : crea una etiqueta
 3. git tag -d <nameTag> : elimina un tag de manera local
-4. git push origin :refs/tags/<nameTag> : elimina un tag en GitHub
+4. git push origin :refs/tags/<nameTag> : elimina un tag en github
 5. git show-ref --tags : muestra a que commits apuntan los tags
-6. git push origin --tags : carga los tags al repo en GitHub
-7. 
+6. git push origin --tags : carga los tags al repo en github
