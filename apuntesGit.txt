@@ -84,6 +84,7 @@
 >> estamos preparados para enviar a GitHub los cambios realizados en el repositorio local
     9. git push origin main
 >> los siguientes comandos ayudan a fusionar de manera forzada el repositorio remoto con el local
-    8. git push origin main --allow-unrelated-histories <branch>
-    9. git push origin main --force: 
+    10. git push origin main --allow-unrelated-histories <branch>
+    11. git push origin main --force
+    12. git push -u origin main 
 >> Enviamos los cambios del repositorio local al remoto
